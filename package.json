@@ -1,0 +1,20 @@
+{
+  "name": "asynchronism-practice-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergioiscoding/asynchronism-practice-course.git"
+  },
+  "keywords": ["asynchronism-practice-course", "javascript"],
+  "author": "sergio lopez olivera9806@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergioiscoding/asynchronism-practice-course/issues"
+  },
+  "homepage": "https://github.com/sergioiscoding/asynchronism-practice-course#readme"
+}
