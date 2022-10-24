@@ -4,17 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "callback": "node src/callback/challenge.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sergioiscoding/asynchronism-practice-course.git"
   },
-  "keywords": ["asynchronism-practice-course", "javascript"],
+  "keywords": [
+    "asynchronism-practice-course",
+    "javascript"
+  ],
   "author": "sergio lopez olivera9806@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sergioiscoding/asynchronism-practice-course/issues"
   },
-  "homepage": "https://github.com/sergioiscoding/asynchronism-practice-course#readme"
+  "homepage": "https://github.com/sergioiscoding/asynchronism-practice-course#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
