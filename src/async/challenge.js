@@ -66,3 +66,51 @@ export async function runCode() {
     }
   }
   
+//2nd playground problem: 
+// En este desafío debes crear una función que usando fetch haga llamadas a APIs y debe contar las siguientes características:
+
+// Realiza la transformación de datos a JSON
+// Solo permite hacer peticiones tipo GET
+// Recibir como parámetro de entrada un string que será la URL
+// Validar que una URL sea correcta, si no lo es debe lanzar un error con el mensaje Invalid URL
+// Si la URL tiene el formato correcto, pero no existe, debería lanzar un error con el mensaje Something was wrong
+// La solución debería tener un input y ouput como los siguientes:
+
+// Input
+
+// await fetchData('https://api.escuelajs.co/api/v1/categories');
+
+// Output
+
+// // return data in json
+// [...]
+
+// Input
+
+// await fetchData('----');
+
+// Output
+
+// // Error: Invalid URL
+
+// Input
+
+// await fetchData('https://domain-a.com/api-1');
+
+// Output
+
+// // Error: Something was wrong
+export async function runCode(url) {
+    try {
+     new URL(url);
+     const response = await fetch(url);
+     return response.json();
+    } catch(error) {
+      if (error.message === "Failed to construct 'URL': Invalid URL"){
+        throw new Error('Invalid URL');
+      } else {
+        throw new Error('Something was wrong');
+      }
+    }
+  }
+  
