@@ -1,0 +1,26 @@
+{
+  "name": "asynchronism-practice-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopezolidev/asynchronism-practice-course.git"
+  },
+  "keywords": [
+    "javascript",
+    "learning",
+    "node",
+    "npm",
+    "asynchronism"
+  ],
+  "author": "sergio lopez, olivera9806@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopezolidev/asynchronism-practice-course/issues"
+  },
+  "homepage": "https://github.com/lopezolidev/asynchronism-practice-course#readme"
+}
