@@ -21,3 +21,19 @@ response_promise
     .then(data => console.log(data[0]))
     .catch(e => console.error(e))
 // resolving response_promise object as a promise, handling the errors at the end, that in itself frees us from using try...catch blocks inside the asynchronous function 
+
+const someAsync = async (urlApi) => {
+    try{
+        const products = await fetchData(urlApi)
+        const title = await fetchData(`${urlApi}/${products[0].id}`)
+        const category = (await fetchData(`${urlApi}/${products[0].id}`)).category.name
+
+        console.log(products)
+        console.log(title)
+        console.log(category)
+    }catch (e) {
+        console.error(e)
+    }
+}
+
+someAsync(urlAPI)
