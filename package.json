@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "xml_callback": "node src/callbacks/xmlHttpReq.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/lopezolidev/asynchronism-practice-course/issues"
   },
-  "homepage": "https://github.com/lopezolidev/asynchronism-practice-course#readme"
+  "homepage": "https://github.com/lopezolidev/asynchronism-practice-course#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
